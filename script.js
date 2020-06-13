@@ -1,6 +1,6 @@
 const socket = io("http://localhost:8080");
 
-const id=prompt("Enter your id ");
+const id=prompt("Enter your user id to join ");
 socket.emit("new-window",id);
 
 var hand = document.querySelector("#hand");
