@@ -1,5 +1,8 @@
 const socket = io("http://localhost:8080");
 
+const id=prompt("Enter your id ");
+socket.emit("new-window",id);
+
 var hand = document.querySelector("#hand");
 var submit = document.querySelector("#submit");
 hand.addEventListener("submit", function(e) {
