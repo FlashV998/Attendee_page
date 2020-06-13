@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="/master.css">
   <script defer src="http://localhost:8080/socket.io/socket.io.js"> </script>
   <script defer src="/script.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+  
 </head>
 
 <body>
@@ -18,6 +21,11 @@
     <div class="button">
       <form id="hand">
         <button type="submit" class="btn" id="submit">Raise Hand</button>
+      </form>
+    </div>
+    <div class="button">
+      <form id="hand" action="/chatroom">
+        <button type="submit" class="btn" >Chatroom</button>
       </form>
     </div>
   </div>

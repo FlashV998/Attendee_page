@@ -35,9 +35,6 @@ app.use(session({
     saveUninitialized: true
 }));
 
-app.listen(3000,function(){
-  console.log("Server started at port 3000");
-});
 
 app.get("/",function(req,res){
   res.render("home.ejs");
@@ -50,4 +47,12 @@ app.get("/",function(req,res){
       console.log("somebody returned");
     }
     console.log("Active users = "+activeCount);
+});
+
+app.get("/chatroom",function(req,res){
+ res.render("chatroom.ejs");
+});
+
+app.listen(3000,function(){
+  console.log("Server started at port 3000");
 });
